@@ -1,0 +1,41 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+  graphql:
+    schema:
+      printer:
+        enabled: true
+    graphiql:
+      # enables graphql query playground by path http://localhost:8080/graphql
+      enabled: true
+    path: /mypathgraphql
+  application:
+    name: graphql-testapp
+  main:
+    allow-bean-definition-overriding: true
+
+server:
+  http2:
+    enabled: true
+
+
+#graphql:
+#    headers:
+#      headerFor: AllTabs
+#    tabs:
+#      - name: Example Tab
+#        query: classpath:exampleQuery.graphql
+#        headers:
+#          SomeHeader: Some value
+#        variables: classpath:variables.json
+#        responses:
+#          - classpath:exampleResponse1.json
+#          - classpath:exampleResponse2.json
+#  servlet:
+#    #max depth of query
+#    maxQueryDepth: 5
+

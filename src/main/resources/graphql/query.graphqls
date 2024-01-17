@@ -1,0 +1,17 @@
+# all available queries on this server
+type Query {
+    # test queries
+    client(id: ID): Client
+    no_client(id: ID): InvalidClient
+    #--------------
+    bankAccount(id: ID): BankAccount
+    customers: [Customer]!
+    customerById(id: ID): Customer
+    customerByEmail(email: String): Customer
+    salespersonById(id: ID): Salesperson
+    salespersonByEmail(email: String): Salesperson
+    products: [Product]!
+    productById(id: ID): Product
+    orders: [Order]!
+    orderById(id: ID): Order
+}

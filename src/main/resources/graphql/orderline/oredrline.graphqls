@@ -1,0 +1,6 @@
+type OrderLine {
+    id: ID!
+    order: Order
+    product: Product
+    quantity: Int
+}

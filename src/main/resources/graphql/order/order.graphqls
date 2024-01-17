@@ -1,0 +1,6 @@
+type Order {
+    id: ID!
+    customer: Customer,
+    salesperson: Salesperson,
+    orderLines: [OrderLine]!
+}
