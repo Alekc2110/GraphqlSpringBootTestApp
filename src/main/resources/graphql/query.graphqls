@@ -10,6 +10,7 @@ type Query {
     customerByEmail(email: String): Customer
     salespersonById(id: ID): Salesperson
     salespersonByEmail(email: String): Salesperson
+    salesPersons:[Salesperson]!
     products: [Product]!
     productById(id: ID): Product
     orders: [Order]!

@@ -16,7 +16,7 @@ public class SalesPersonController {
         this.salespersonRepository = salespersonRepository;
     }
 
-    @QueryMapping
+    @QueryMapping(value = "salesPersons")
     public Iterable<SalesPerson> salespeople(){
         return this.salespersonRepository.findAll();
     }
