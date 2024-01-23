@@ -1,4 +1,4 @@
-package com.example.grapghqltestapp.api.model;
+package com.example.grapghqltestapp.api.payload;
 
 import com.example.grapghqltestapp.persistence.entity.Customer;
 import lombok.Getter;

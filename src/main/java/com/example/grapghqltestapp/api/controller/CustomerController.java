@@ -1,6 +1,6 @@
 package com.example.grapghqltestapp.api.controller;
 
-import com.example.grapghqltestapp.api.model.CustomerInput;
+import com.example.grapghqltestapp.api.payload.CustomerInput;
 import com.example.grapghqltestapp.persistence.entity.Customer;
 import com.example.grapghqltestapp.persistence.repository.CustomerRepository;
 import org.springframework.graphql.data.method.annotation.Argument;

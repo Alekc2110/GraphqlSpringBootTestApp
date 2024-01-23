@@ -1,7 +1,7 @@
 package com.example.grapghqltestapp.api.controller;
 
 import com.example.grapghqltestapp.domain.model.BankAccount;
-import com.example.grapghqltestapp.api.model.BankAccountInput;
+import com.example.grapghqltestapp.api.payload.BankAccountInput;
 import com.example.grapghqltestapp.domain.model.Client;
 import com.example.grapghqltestapp.domain.model.Currency;
 import lombok.extern.slf4j.Slf4j;

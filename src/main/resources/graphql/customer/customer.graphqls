@@ -8,4 +8,5 @@ type Customer {
     city: String!
     state: String!
     zipCode: String!
+    orders:[Order]!
 }
