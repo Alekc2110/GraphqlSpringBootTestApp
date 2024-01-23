@@ -1,4 +1,4 @@
 package com.example.grapghqltestapp.api.payload;
 
-public record BankAccountInput(String firstName) {
+public record BankAccountInput(Long customerId) {
 }

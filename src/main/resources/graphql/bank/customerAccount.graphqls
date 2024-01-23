@@ -1,0 +1,5 @@
+type CustomerAccountSuccess{
+    bankAccount: BankAccount
+    customer: Customer
+    createdAt: String!
+}

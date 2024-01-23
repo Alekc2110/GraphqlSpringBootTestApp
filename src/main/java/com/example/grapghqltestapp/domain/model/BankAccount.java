@@ -1,14 +1,15 @@
 package com.example.grapghqltestapp.domain.model;
 
-import lombok.Builder;
-import lombok.Value;
+import lombok.*;
+
 import java.util.UUID;
 
-@Value
+@ToString
+@Getter
+@Setter
 @Builder
 public class BankAccount {
-
     UUID id;
-    Client client;
+    Long customerId;
     Currency currency;
 }

@@ -1,5 +1,5 @@
 type Mutation {
-    addBankAccount(input: BankAccountInput!): BankAccount
+    addBankAccount(input: BankAccountInput!): CustomerAccountSuccess!
     addCustomer(input: CustomerInput): Customer
 }
 

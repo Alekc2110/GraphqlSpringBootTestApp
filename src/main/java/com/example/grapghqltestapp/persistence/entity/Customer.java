@@ -4,11 +4,13 @@ package com.example.grapghqltestapp.persistence.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.util.Set;
 
 @Getter
 @Setter
+@ToString
 @NamedEntityGraph(
         name = "customerEntityGraph",
         attributeNodes = @NamedAttributeNode(value = "orders", subgraph = "subgraph.orders"),
