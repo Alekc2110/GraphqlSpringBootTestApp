@@ -1,5 +1,7 @@
+scalar LocalTime
+
 type CustomerAccountSuccess{
     bankAccount: BankAccount
     customer: Customer
-    createdAt: String!
+    createdAt: LocalTime
 }

@@ -1,9 +1,13 @@
 package com.example.grapghqltestapp.config;
 
+import graphql.scalars.ExtendedScalars;
+import graphql.schema.GraphQLScalarType;
+import graphql.schema.idl.RuntimeWiring;
 import org.springframework.boot.autoconfigure.graphql.GraphQlSourceBuilderCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.graphql.execution.ClassNameTypeResolver;
+import org.springframework.graphql.execution.RuntimeWiringConfigurer;
 
 @Configuration
 public class GraphqlConfig /*extends GraphQlWebMvcAutoConfiguration*/{
@@ -26,4 +30,9 @@ public class GraphqlConfig /*extends GraphQlWebMvcAutoConfiguration*/{
 ////        classNameTypeResolver.addMapping(BankAccountResponse.class, "CustomerAccountSuccess");
 //        return builder -> builder.defaultTypeResolver(classNameTypeResolver);
 //    }
+
+    @Bean
+    public RuntimeWiringConfigurer runtimeWiringConfigurer(){
+        return builder -> builder.scalar(ExtendedScalars.LocalTime);
+    }
 }

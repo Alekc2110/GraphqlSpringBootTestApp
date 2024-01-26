@@ -15,6 +15,7 @@ import org.springframework.graphql.data.method.annotation.SchemaMapping;
 import org.springframework.stereotype.Controller;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 @Slf4j
 @Controller
@@ -42,7 +43,7 @@ public class BankAccountController {
         Customer customer = repository.findById(input.customerId()).orElseThrow();
         CustomerAccountSuccess customerAccountSuccess = new CustomerAccountSuccess(
                 customer,
-                LocalDate.now()
+                LocalTime.now()
         );
         log.info("created CustomerAccountSuccess: {}", customerAccountSuccess);
         return customerAccountSuccess;
